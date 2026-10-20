@@ -20,7 +20,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/mapcidr@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/mapcidr@sha256:e2b5ceae8e3b310b0f6138949754b11042227d18c73bbb6342ee54b4b96c6321
   platforms: [linux/amd64, linux/arm64]
   command: ["mapcidr", "-cl", "{cidr}", "-silent", "-duc"]
   output_format: text
